@@ -1,17 +1,6 @@
 const express = require("express");
 const app = express();
 app.use(express.json());
-const { createProxyMiddleware } = require("http-proxy-middleware");
-
-module.exports = function (app) {
-  app.use(
-    "/v1/update",
-    createProxyMiddleware({
-      target: "http://localhost:8000",
-      changeOrigin: true,
-    })
-  );
-};
 
 app.post("/v1/update", (req, res) => {
   setTimeout(() => {
@@ -19,6 +8,6 @@ app.post("/v1/update", (req, res) => {
   }, [2000]);
 });
 
-app.listen("8080", () => {
+app.listen(8080, () => {
   console.log("Server is running....");
 });
