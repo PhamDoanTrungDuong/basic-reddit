@@ -1,4 +1,5 @@
 import "./../Edit/edit.css";
+import "./../Posts/posts.css";
 const Input = ({ label, data, type, setData, cls, inputType }) => {
   return (
     <>
