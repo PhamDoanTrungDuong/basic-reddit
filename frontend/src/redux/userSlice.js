@@ -8,7 +8,7 @@ export const userSlice = createSlice({
           about: "I'm a software engineer",
           theme: "#ff9051",
           avaUrl: "https://i.redd.it/rrz3hmsxcll71.png",
-          pending: false.valueOf,
+          pending: false,
           error: false
      },
      reducers: {

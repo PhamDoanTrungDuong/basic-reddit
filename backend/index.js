@@ -8,6 +8,6 @@ app.post("/v1/update", (req, res) => {
   }, [2000]);
 });
 
-app.listen(8080, () => {
+app.listen("8080", () => {
   console.log("Server is running....");
 });

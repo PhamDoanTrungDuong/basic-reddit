@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updateUser } from "../../redux/apiRequests";
-import { update } from "../../redux/userSlice";
 import Input from "../InputFields/Input";
 import "./edit.css";
 
@@ -15,6 +14,7 @@ const EditPage = ({ setEdit }) => {
     "https://i.redd.it/snoovatar/avatars/37fa000c-cd4f-46f2-94af-24459d49fc31.png",
     "https://i.redd.it/snoovatar/avatars/c9f4f73d-cfa8-4444-bf1e-2a350d061c94.png",
     "https://i.redd.it/snoovatar/avatars/dc75efff-a226-4956-94dc-e4502ce2c044.png",
+    "https://i.redd.it/mkemq6sqf7261.png"
   ];
   const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
